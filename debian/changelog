@@ -1,5 +1,51 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-ansible-pygments (0.1.1-6) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Add patch from upstream to fix test suite against pygments 2.15
+    Added patch:
+    debian/patches/Make-lexer-test-compare-tokens.patch
+    (Closes: #1035965, LP: #2019237)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Olivier Gayot <olivier.gayot@canonical.com>  Thu, 11 May 2023 21:30:42 +0200
+
+python-ansible-pygments (0.1.1-5) unstable; urgency=medium
+
+  * Team upload
+  * d/gbp.conf: Add some default values
+  * Add patch from patch-queue branch
+    Added patch:
+    Fix-tests-post-Pygments-update.patch
+    (Closes: #1028839)
+  * d/control: Bump Standards-Version to 4.6.2
+    No further modifications needed.
+  * d/control: Set B-D version for pygments to >= 2.14.0
+  * d/control: Add/adjust B-D, adding BuildProfileSpecs
+  * d/rules: Drop --with from default target
+  * autopkgtest: Add and run upstream tests
+
+ -- Carsten Schoenert <c.schoenert@t-online.de>  Sun, 22 Jan 2023 13:57:08 +0100
+
+python-ansible-pygments (0.1.1-4) unstable; urgency=medium
+
+  * debian/watch: Update search rule according to the type of versioning used
+    by upstream.
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Sat, 24 Dec 2022 09:21:23 -0300
+
+python-ansible-pygments (0.1.1-3) unstable; urgency=medium
+
+  * New source-only upload to all architectures.
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Sat, 16 Jul 2022 07:48:50 -0300
+
+python-ansible-pygments (0.1.1-2) unstable; urgency=medium
+
+  * Source-only upload to allow testing migration.
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Fri, 08 Jul 2022 06:34:07 -0300
+
+python-ansible-pygments (0.1.1-1) experimental; urgency=medium
+
+  * Initial release. (Closes: #992108)
+
+ -- Guilherme de Paula Xavier Segundo <guilherme.lnx@gmail.com>  Thu, 09 Jun 2022 08:31:40 -0300

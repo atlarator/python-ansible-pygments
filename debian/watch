@@ -1,0 +1,2 @@
+version=4
+ https://github.com/ansible-community/ansible-pygments/tags .*/tags/v?([\d\.]+)\.tar\.(?:bz2|gz|xz)
